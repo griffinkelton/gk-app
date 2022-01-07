@@ -3,3 +3,12 @@
   --logo: url(https://brand.ncsu.edu/img/logo/4x1white.jpg);
   --brand-color: #cc0000;
 }
+/* Font Awesome Icons */
+@import url("https://dev-engage1-oswald.terradotta.com/_assets/css/font-awesome.min.css?v=TDS19.1-07212020");
+
+/*Google Web Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;700&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+}

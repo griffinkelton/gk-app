@@ -33,6 +33,13 @@
       "zeplinIds": [
         "61d5f29dcfb7ff78d4246daa"
       ]
+    },
+    {
+      "path": "src/app/components/line.component.ts",
+      "zeplinIds": [
+        "61d880ff31915e75827b7262",
+        "61d880ffccb46f7c5fe59983"
+      ]
     }
   ]
 }

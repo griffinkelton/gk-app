@@ -25,5 +25,7 @@ const Template: Story<sbHeaderComponent> = (args: sbHeaderComponent) => ({
 
 export const Default = Template.bind({});
   Default.args = {
-    title: "Title"
+    title: 'Title',
+    cta: '',
+    icon: ''
   };

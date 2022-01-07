@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { sbButtonComponent } from './components/button.component';
 import { NavComponent } from './components/nav.component';
 import { sbHeaderComponent } from './components/header.component';
+import { sbLineComponent } from './components/line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     sbButtonComponent,
     NavComponent,
-    sbHeaderComponent
+    sbHeaderComponent,
+    sbLineComponent
   ],
   imports: [
     BrowserModule,

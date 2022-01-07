@@ -1,7 +1,6 @@
 @import url("../brand.css");
 
 .storybook-button {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: solid 2px var(--brand-color);
   border-radius: 8px;
@@ -12,7 +11,6 @@
 
 .storybook-button:hover {
   background-color: white;
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
   font-weight: 700;
   border: solid 2px var(--brand-color);

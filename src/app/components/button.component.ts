@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     (click)="onClick.emit($event)"
     [ngClass]="classes"
     [ngStyle]="{ 'background-color': backgroundColor }">
-    {{ label }}
+    <span [ngClass]='[icon]'></span> {{ label }}
   </button>`,
   styleUrls: ['./button.css'],
 })
@@ -38,6 +38,9 @@ export class sbButtonComponent {
    */
   @Input()
   label = 'Button';
+
+  @Input()
+  icon?: string;
 
   /**
    * Optional click handler

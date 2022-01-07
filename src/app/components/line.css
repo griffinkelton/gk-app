@@ -1,0 +1,16 @@
+@import url("../brand.css");
+
+.list-item {
+  width: 1100px;
+  border: 1px solid #f3f4f8;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  width: 1400px;
+  border: 1px solid #f3f4f8;
+  display: block;
+  margin: 0 auto 20px auto;
+}

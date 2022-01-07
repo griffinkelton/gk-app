@@ -1,11 +1,12 @@
 @import url("../brand.css");
+@import url("./line.css");
 
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
 }
 
 h1 {

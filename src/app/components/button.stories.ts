@@ -21,7 +21,7 @@ export default {
 },
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: 'color' }
   },
 } as Meta;
 
@@ -46,7 +46,7 @@ Secondary.args = {
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  label: 'Button',
+  label: 'Button'
 };
 
 export const Small = Template.bind({});

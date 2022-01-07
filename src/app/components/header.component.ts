@@ -7,8 +7,9 @@ import { Component, Input } from '@angular/core';
       <h1>
       {{ title }}
       </h1>
-      <storybook-button class='cta' label='{{cta}}'></storybook-button>
-  </header>`,
+      <storybook-button class='cta' label='{{ cta }}' [primary]='true' icon='{{icon}}'></storybook-button>
+  </header>
+  <storybook-line class='header'></storybook-line>`,
   styleUrls: ['./header.css'],
 })
 export class sbHeaderComponent {
@@ -18,8 +19,11 @@ export class sbHeaderComponent {
    * @required
    */
    @Input()
-   title = 'Title';
+   title?: string;
 
    @Input()
-   cta = 'New Campaign';
+   cta?: string;
+
+   @Input()
+   icon?: string;
 }
