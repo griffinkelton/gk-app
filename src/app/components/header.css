@@ -1,0 +1,17 @@
+@import url("../brand.css");
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin-left: 40px;
+}
+
+.cta {
+  margin-right: 40px;
+}

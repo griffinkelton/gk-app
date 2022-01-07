@@ -1,0 +1,43 @@
+@import url("../brand.css");
+
+.nav-nav-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  background-color: #fff;
+}
+
+.logo {
+  height: 30px;
+  margin: 10px;
+  content: var(--logo);
+}
+
+.nav-nav-menu {
+  display: inline-flex;
+  gap: 16px;
+  padding: 0 80px 0 0;
+}
+
+.list-item {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}

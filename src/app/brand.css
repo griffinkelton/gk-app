@@ -1,0 +1,5 @@
+/* NCSU Brand */
+:host {
+  --logo: url(https://brand.ncsu.edu/img/logo/4x1white.jpg);
+  --brand-color: #cc0000;
+}
