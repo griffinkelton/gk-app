@@ -5,26 +5,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   template: ` <button
     type="button"
     (click)="onClick.emit($event)"
-    [ngClass]="classes"
-    [ngStyle]="{ 'background-color': backgroundColor }">
+    [ngClass]="classes">
     <span [ngClass]='[icon]'></span> {{ label }}
   </button>`,
   styleUrls: ['./button.css'],
 })
 export class sbButtonComponent {
   
-  /**
-   * Is this the principal call to action on the page?
-   */
-  @Input()
-  primary = false;
-
-  /**
-   * What background color to use
-   */
-  @Input()
-  backgroundColor?: string;
-
   /**
    * How large should the button be?
    */
@@ -49,7 +36,7 @@ export class sbButtonComponent {
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary'  : 'storybook-button--secondary';
+    const mode = 'storybook-button'
 
     return ['storybook-button', `storybook-button--${this.size}`, mode];
   }

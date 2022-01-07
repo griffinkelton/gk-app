@@ -7,6 +7,8 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  color: white;
+  background-color: var(--brand-color);
 }
 
 .storybook-button:hover {
@@ -20,15 +22,6 @@
   line-height: 1;
 }
 
-.storybook-button--primary {
-  color: white;
-  background-color: var(--brand-color);
-}
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;

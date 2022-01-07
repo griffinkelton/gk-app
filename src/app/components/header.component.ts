@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
       <h1>
       {{ title }}
       </h1>
-      <storybook-button class='cta' label='{{ cta }}' [primary]='true' icon='{{icon}}'></storybook-button>
+      <storybook-button class='cta' label='{{ cta }}' icon='{{icon}}'></storybook-button>
   </header>
   <storybook-line class='header'></storybook-line>`,
   styleUrls: ['./header.css'],

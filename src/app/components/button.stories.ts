@@ -18,11 +18,7 @@ export default {
         link: 'https://app.zeplin.io/project/61d5f289ed8d1e79ade68398/styleguide/components?coid=61d5f29ee849298ddc4ff7c5',
       }
     ]
-},
-  // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' }
-  },
+}
 } as Meta;
 
 
@@ -31,15 +27,9 @@ const Template: Story<sbButtonComponent> = (args: sbButtonComponent) => ({
   props: args,
 });
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/angular/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
   label: 'Button',
 };
 
