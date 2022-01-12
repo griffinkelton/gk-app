@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Font Awesome Icons */
+@import url("https://dev-engage1-oswald.terradotta.com/_assets/css/font-awesome.min.css?v=TDS19.1-07212020");
+
+/*Google Web Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;400;700&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+}

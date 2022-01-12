@@ -3,9 +3,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'storybook-button',
   template: ` <button
-    type="button"
-    (click)="onClick.emit($event)"
-    [ngClass]="classes">
+    type='button'
+    (click)='onClick.emit($event)'
+    [ngClass]='classes'>
     <span [ngClass]='[icon]'></span> {{ label }}
   </button>`,
   styleUrls: ['./button.css'],

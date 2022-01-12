@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gk-app';
+  fillColor='#cc0000';
 }

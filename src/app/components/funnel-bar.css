@@ -1,0 +1,48 @@
+@import url("../brand.css");
+
+canvas {
+  border-style: solid;
+  border-color: var(--brand-color);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.funnel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.funnel-title {
+  margin-left: auto;
+  padding: 0 50px;
+}
+
+.funnel-percentage {
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+.funnel-bar {
+  color: #ffffff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: var(--brand-color);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.funnel-bar:hover {
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 1.25;
+}
+
+#targeted {
+  width: 630px;
+  height: 57px;
+}

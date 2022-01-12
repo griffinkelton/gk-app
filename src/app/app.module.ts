@@ -8,6 +8,7 @@ import { sbButtonComponent } from './components/button.component';
 import { NavComponent } from './components/nav.component';
 import { sbHeaderComponent } from './components/header.component';
 import { sbLineComponent } from './components/line.component';
+import { sbFunnelBar } from './components/funnel-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { sbLineComponent } from './components/line.component';
     sbButtonComponent,
     NavComponent,
     sbHeaderComponent,
-    sbLineComponent
+    sbLineComponent,
+    sbFunnelBar
   ],
   imports: [
     BrowserModule,

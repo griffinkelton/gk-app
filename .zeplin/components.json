@@ -40,6 +40,12 @@
         "61d880ff31915e75827b7262",
         "61d880ffccb46f7c5fe59983"
       ]
+    },
+    {
+      "path": "src/app/components/funnel-bar.component.ts",
+      "zeplinIds": [
+        "61df4092b382be69ee570ac0"
+      ]
     }
   ]
 }

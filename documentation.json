@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-314fc854fc61e0351e90586319bb284b2d32ca01e72ef46636b591f12f3691d1cae0140b7e1299e16453344f3eb19428f7b2ee242520ae76adaead59f60b2968",
+            "id": "component-AppComponent-f815e32420985e172973375c9a5104f3d0ab7fdc9fbc85fd7e4560b47f12194f87f2bfcf3624f35cc79bb8140fcec29af3763411696e5fc46521ee451e014fca",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -29,6 +29,16 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "fillColor",
+                    "defaultValue": "'#cc0000'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
                     "name": "title",
                     "defaultValue": "'gk-app'",
                     "deprecated": false,
@@ -47,7 +57,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'gk-app';\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'gk-app';\n  fillColor='#cc0000';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -56,7 +66,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<style>\n  :host {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n    font-size: 14px;\n    color: #333;\n    box-sizing: border-box;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n\n  h1,\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    margin: 8px 0;\n  }\n\n  p {\n    margin: 0;\n  }\n\n  .spacer {\n    flex: 1;\n  }\n\n  .toolbar {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n  }\n\n  .toolbar img {\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo {\n    height: 40px;\n    margin: 0 8px;\n  }\n\n  .toolbar #youtube-logo {\n    height: 40px;\n    margin: 0 16px;\n  }\n\n  .toolbar #twitter-logo:hover,\n  .toolbar #youtube-logo:hover {\n    opacity: 0.8;\n  }\n\n  .content {\n    display: flex;\n    margin: 82px auto 32px;\n    padding: 0 16px;\n    max-width: 960px;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  svg.material-icons {\n    height: 24px;\n    width: auto;\n  }\n\n  svg.material-icons:not(:last-child) {\n    margin-right: 8px;\n  }\n\n  .card svg.material-icons path {\n    fill: #888;\n  }\n\n  .card-container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    margin-top: 16px;\n  }\n\n  .card {\n    all: unset;\n    border-radius: 4px;\n    border: 1px solid #eee;\n    background-color: #fafafa;\n    height: 40px;\n    width: 200px;\n    margin: 0 8px 16px;\n    padding: 16px;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    transition: all 0.2s ease-in-out;\n    line-height: 24px;\n  }\n\n  .card-container .card:not(:last-child) {\n    margin-right: 0;\n  }\n\n  .card.card-small {\n    height: 16px;\n    width: 168px;\n  }\n\n  .card-container .card:not(.highlight-card) {\n    cursor: pointer;\n  }\n\n  .card-container .card:not(.highlight-card):hover {\n    transform: translateY(-3px);\n    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);\n  }\n\n  .card-container .card:not(.highlight-card):hover .material-icons path {\n    fill: rgb(105, 103, 103);\n  }\n\n  .card.highlight-card {\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n    border: none;\n    width: auto;\n    min-width: 30%;\n    position: relative;\n  }\n\n  .card.card.highlight-card span {\n    margin-left: 60px;\n  }\n\n  svg#rocket {\n    width: 80px;\n    position: absolute;\n    left: -10px;\n    top: -24px;\n  }\n\n  svg#rocket-smoke {\n    height: calc(100vh - 95px);\n    position: absolute;\n    top: 10px;\n    right: 180px;\n    z-index: -10;\n  }\n\n  a,\n  a:visited,\n  a:hover {\n    color: #1976d2;\n    text-decoration: none;\n  }\n\n  a:hover {\n    color: #125699;\n  }\n\n  .terminal {\n    position: relative;\n    width: 80%;\n    max-width: 600px;\n    border-radius: 6px;\n    padding-top: 45px;\n    margin-top: 8px;\n    overflow: hidden;\n    background-color: rgb(15, 15, 16);\n  }\n\n  .terminal::before {\n    content: \"\\2022 \\2022 \\2022\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 4px;\n    background: rgb(58, 58, 58);\n    color: #c2c3c4;\n    width: 100%;\n    font-size: 2rem;\n    line-height: 0;\n    padding: 14px 0;\n    text-indent: 4px;\n  }\n\n  .terminal pre {\n    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;\n    color: white;\n    padding: 0 1rem 1rem;\n    margin: 0;\n  }\n\n  .circle-link {\n    height: 40px;\n    width: 40px;\n    border-radius: 40px;\n    margin: 8px;\n    background-color: white;\n    border: 1px solid #eeeeee;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n    transition: 1s ease-out;\n  }\n\n  .circle-link:hover {\n    transform: translateY(-0.25rem);\n    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);\n  }\n\n  footer {\n    margin-top: 8px;\n    display: flex;\n    align-items: center;\n    line-height: 20px;\n  }\n\n  footer a {\n    display: flex;\n    align-items: center;\n  }\n\n  .github-star-badge {\n    color: #24292e;\n    display: flex;\n    align-items: center;\n    font-size: 12px;\n    padding: 3px 10px;\n    border: 1px solid rgba(27,31,35,.2);\n    border-radius: 3px;\n    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);\n    margin-left: 4px;\n    font-weight: 600;\n  }\n\n  .github-star-badge:hover {\n    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);\n    border-color: rgba(27,31,35,.35);\n    background-position: -.5em;\n  }\n\n  .github-star-badge .material-icons {\n    height: 16px;\n    width: 16px;\n    margin-right: 4px;\n  }\n\n  svg#clouds {\n    position: fixed;\n    bottom: -160px;\n    left: -230px;\n    z-index: -10;\n    width: 1920px;\n  }\n\n  /* Responsive Styles */\n  @media screen and (max-width: 767px) {\n    .card-container > *:not(.circle-link) ,\n    .terminal {\n      width: 100%;\n    }\n\n    .card:not(.highlight-card) {\n      height: 16px;\n      margin: 8px 0;\n    }\n\n    .card.highlight-card span {\n      margin-left: 72px;\n    }\n\n    svg#rocket-smoke {\n      right: 120px;\n      transform: rotate(-5deg);\n    }\n  }\n\n  @media screen and (max-width: 575px) {\n    svg#rocket-smoke {\n      display: none;\n      visibility: hidden;\n    }\n  }\n</style>\n\n<storybook-nav link1=\"Campaigns\" link2=\"Subscribers\" link3=\"Email Templates\"></storybook-nav>\n<storybook-header title='Campaigns' cta='New Campaign' icon='far fa-edit'></storybook-header>\n\n<router-outlet></router-outlet>\n"
+            "templateData": "<storybook-nav link1=\"Campaigns\" link2=\"Subscribers\" link3=\"Email Templates\"></storybook-nav>\n<storybook-header title='Campaigns' cta='New Campaign' icon='far fa-edit'></storybook-header>\n\n<storybook-funnel-bar [title]=\"'Targeted'\" [cssClass]=\"'targeted funnel-bar'\" [fillColor]=\"fillColor\" [amount]=\"1500\" [percentage]=\"100\"></storybook-funnel-bar>\n\n<router-outlet></router-outlet>\n"
         },
         {
             "name": "ButtonComponent",
@@ -445,7 +455,7 @@
         },
         {
             "name": "sbButtonComponent",
-            "id": "component-sbButtonComponent-a52345ba2dc9806fc309ba089711ec5269cae5202a99e40d6b53e3401c59cefb7e4f5585840a7d86fc48841cc7a5ee6e4e9ec3a7d78a21df1479183b1e91188d",
+            "id": "component-sbButtonComponent-0899df8bf507b85b0a3f880846cef75e48609e422c345f28ff60f5e991cc43402002ac3b7e83872964bb6dbf3839a67373e76134dd18cd7cf0ee1b391b81e9b0",
             "file": "src/app/components/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -457,7 +467,7 @@
                 "./button.css"
             ],
             "styles": [],
-            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\">\n   <span [ngClass]='[icon]'></span> {{ label }}\n </button>",
+            "template": "<button   type='button'\n   (click)='onClick.emit($event)'\n   [ngClass]='classes'>\n   <span [ngClass]='[icon]'></span> {{ label }}\n </button>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -533,7 +543,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\">\n    <span [ngClass]='[icon]'></span> {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport class sbButtonComponent {\n  \n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  @Input()\n  icon?: string;\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = 'storybook-button'\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type='button'\n    (click)='onClick.emit($event)'\n    [ngClass]='classes'>\n    <span [ngClass]='[icon]'></span> {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport class sbButtonComponent {\n  \n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  @Input()\n  icon?: string;\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = 'storybook-button'\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -553,6 +563,124 @@
                     }
                 }
             }
+        },
+        {
+            "name": "sbFunnelBar",
+            "id": "component-sbFunnelBar-d934b9594b12a28113c5e45661e254d9825256bd70862fdea7c054a3ddee50d1a7c8b592d7b341fb32a0754cd0827b0c7783d71d38c98b3c92e357d82cffbc03",
+            "file": "src/app/components/funnel-bar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-funnel-bar",
+            "styleUrls": [
+                "./funnel-bar.css"
+            ],
+            "styles": [],
+            "template": "<div class=\"funnel\">\n  <div class='funnel-title'>{{ title }}</div>\n  <div>\n    <canvas\n      *ngIf=\"percentage < 100\"\n      #canvas\n      [ngClass]='[cssClass]'\n    ></canvas>\n    <div\n    [ngClass]='[cssClass]'>\n      <h2>{{amount | number:'1.0'}}</h2>\n    </div>\n  </div>\n  <div class='funnel-percentage'>{{percentage | number:'1.2-2'}}%</div>\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "amount",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 36,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "cssClass",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "fillColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "percentage",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 39,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "canvas",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef<HTMLCanvasElement>",
+                    "optional": false,
+                    "description": "",
+                    "line": 42,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'canvas', {static: true}"
+                        }
+                    ]
+                },
+                {
+                    "name": "ctx",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, ViewChild, ElementRef, OnInit, Input} from '@angular/core';\n\n@Component({\n  selector: 'storybook-funnel-bar',\n  template: `\n  <div class=\"funnel\">\n    <div class='funnel-title'>{{ title }}</div>\n    <div>\n      <canvas\n        *ngIf=\"percentage < 100\"\n        #canvas\n        [ngClass]='[cssClass]'\n      ></canvas>\n      <div\n      [ngClass]='[cssClass]'>\n        <h2>{{amount | number:'1.0'}}</h2>\n      </div>\n    </div>\n    <div class='funnel-percentage'>{{percentage | number:'1.2-2'}}%</div>\n  </div>\n  `,\n  styleUrls: ['./funnel-bar.css']\n})\n\nexport class sbFunnelBar implements OnInit {\n  @Input()\n  cssClass?: string;\n\n  @Input()\n  fillColor?: string;\n\n  @Input()\n  title?:string;\n\n  @Input()\n  amount?: number;\n  \n  @Input()\n  percentage: number;\n \n  @ViewChild('canvas', { static: true })\n  canvas: ElementRef<HTMLCanvasElement>;  \n\n  ctx: any;\n\n  ngOnInit(): void {\n    var canvas: ElementRef<HTMLCanvasElement>;  \n    var ctx: CanvasRenderingContext2D;\n    this.ctx = this.canvas.nativeElement.getContext('2d');\n    this.ctx.fillStyle = this.fillColor;\n    this.ctx.fillRect(0, 0, innerWidth, innerHeight);\n    var x = innerWidth / 2;\n    var y = innerHeight / 2;\n    this.ctx.fillStyle = 'white';\n    this.ctx.font = '50px serif';\n    this.ctx.fillText('Hello', x, y);\n  };\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url(\"../brand.css\");\n\ncanvas {\n  border-style: solid;\n  border-color: var(--brand-color);\n  margin-left: auto;\n  margin-right: auto;\n  display: block;\n}\n\n.funnel {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.funnel-title {\n  margin-left: auto;\n  padding: 0 50px;\n}\n\n.funnel-percentage {\n  margin-right: auto;\n  padding: 0 50px;\n}\n\n.funnel-bar {\n  color: #ffffff;\n  justify-content: center;\n  display: flex;\n  align-items: center;\n}\n\n.targeted {\n  width: 630px;\n  height: 57px;\n  background-color: var(--brand-color);\n}\n",
+                    "styleUrl": "./funnel-bar.css"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit"
+            ]
         },
         {
             "name": "sbHeaderComponent",
@@ -730,13 +858,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-7e808ad9152df79529d35b66e52b5e06a6fcf9a02bdef300d8ba7afc75f773474a338519d568f77277b8710fe2e28c21d4776dc18a4e9869d6e4e02789c9a666",
+            "id": "module-AppModule-8bbace7398975005d2a477b54c24e858bab4650cf5e939b95c61d8e204fe0a368f5e94c614533744d91b6d5ff17d8143575f64cd555492b3c683ad91b0bcfd8a",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\nimport { sbButtonComponent } from './components/button.component';\nimport { NavComponent } from './components/nav.component';\nimport { sbHeaderComponent } from './components/header.component';\nimport { sbLineComponent } from './components/line.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    sbButtonComponent,\n    NavComponent,\n    sbHeaderComponent,\n    sbLineComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\n\nimport { sbButtonComponent } from './components/button.component';\nimport { NavComponent } from './components/nav.component';\nimport { sbHeaderComponent } from './components/header.component';\nimport { sbLineComponent } from './components/line.component';\nimport { sbFunnelBar } from './components/funnel-bar.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    sbButtonComponent,\n    NavComponent,\n    sbHeaderComponent,\n    sbLineComponent,\n    sbFunnelBar\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -753,6 +881,9 @@
                         },
                         {
                             "name": "sbButtonComponent"
+                        },
+                        {
+                            "name": "sbFunnelBar"
                         },
                         {
                             "name": "sbHeaderComponent"
@@ -836,6 +967,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/funnel-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Default",
@@ -1020,21 +1161,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": ".stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": ".stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Header>",
                 "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1055,6 +1196,16 @@
                 "deprecationMessage": "",
                 "type": "Story<sbButtonComponent>",
                 "defaultValue": "(args: sbButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/funnel-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<sbFunnelBar>",
+                "defaultValue": "(args: sbFunnelBar) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -1110,6 +1261,28 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
+                }
+            ],
+            "src/app/components/funnel-bar.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/funnel-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/funnel-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<sbFunnelBar>",
+                    "defaultValue": "(args: sbFunnelBar) => ({\n  props: args,\n})"
                 }
             ],
             "src/app/components/header.stories.ts": [
@@ -1536,7 +1709,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1580,6 +1753,35 @@
             },
             {
                 "filePath": "src/app/components/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/funnel-bar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "sbFunnelBar",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/funnel-bar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/funnel-bar.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
