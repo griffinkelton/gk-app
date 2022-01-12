@@ -11,7 +11,7 @@ export default {
     zeplinLink:[
       {
         name: 'normal',
-        link: '',
+        link: 'https://app.zeplin.io/project/61d5f289ed8d1e79ade68398/styleguide/components?coid=61df4092b382be69ee570ac0',
       },
       {
         name: 'hover',

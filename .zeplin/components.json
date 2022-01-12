@@ -44,7 +44,8 @@
     {
       "path": "src/app/components/funnel-bar.component.ts",
       "zeplinIds": [
-        "61df4092b382be69ee570ac0"
+        "61df4092b382be69ee570ac0",
+        "61df409115532232ebf49ddd"
       ]
     }
   ]
