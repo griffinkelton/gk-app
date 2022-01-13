@@ -2,6 +2,7 @@
 :host {
   --logo: url(https://brand.ncsu.edu/img/logo/4x1white.jpg);
   --brand-color: #cc0000;
+  --brand-color-trans: #cc000080;
 }
 /* Font Awesome Icons */
 @import url("https://dev-engage1-oswald.terradotta.com/_assets/css/font-awesome.min.css?v=TDS19.1-07212020");

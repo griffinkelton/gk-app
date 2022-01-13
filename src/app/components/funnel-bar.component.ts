@@ -19,11 +19,16 @@ import { Component, ViewChild, ElementRef, OnInit, Input} from '@angular/core';
     </div>
     <div class='funnel-percentage'>{{percentage | number:'1.2-2'}}%</div>
   </div>
+  <div class='descender'>
+<div class='left-half descender-bar' style='width:calc({{drop}}*0.5*630px);'></div>
+<span>70%</span>
+<div class='right-half descender-bar' style='width:calc({{drop}}*0.5*630px);'></div>
+</div>
   `,
   styleUrls: ['./funnel-bar.css']
 })
 
-export class sbFunnelBar implements OnInit {
+export class sbFunnelBar {
   @Input()
   cssClass?: string;
 
@@ -41,22 +46,7 @@ export class sbFunnelBar implements OnInit {
 
   @Input()
   id?: string;
- 
-  @ViewChild('canvas', { static: true })
-  canvas: ElementRef<HTMLCanvasElement>;  
 
-  ctx: any;
-
-  ngOnInit(): void {
-    var canvas: ElementRef<HTMLCanvasElement>;  
-    var ctx: CanvasRenderingContext2D;
-    this.ctx = this.canvas.nativeElement.getContext('2d');
-    this.ctx.fillStyle = this.fillColor;
-    this.ctx.fillRect(0, 0, innerWidth, innerHeight);
-    var x = innerWidth / 2;
-    var y = innerHeight / 2;
-    this.ctx.fillStyle = 'white';
-    this.ctx.font = '50px serif';
-    this.ctx.fillText('Hello', x, y);
-  };
+  @Input()
+  drop?: number;
 }
