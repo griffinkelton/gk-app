@@ -9,6 +9,7 @@ import { NavComponent } from './components/nav.component';
 import { sbHeaderComponent } from './components/header.component';
 import { sbLineComponent } from './components/line.component';
 import { sbFunnelBar } from './components/funnel-bar.component';
+import { sbFunnelDescender } from './components/funnel-descender.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { sbFunnelBar } from './components/funnel-bar.component';
     NavComponent,
     sbHeaderComponent,
     sbLineComponent,
-    sbFunnelBar
+    sbFunnelBar,
+    sbFunnelDescender
   ],
   imports: [
     BrowserModule,

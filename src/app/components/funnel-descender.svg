@@ -1,0 +1,12 @@
+ <svg [attr.width]='[p0]' [attr.height]='[V]'>
+    <g>
+      <path id='descender' [attr.d]="
+        'M ' + Ox + ' ' + Oy + ' H ' + p0 + ' L ' + math.abs(p0 - (p0-(p0*d0))/2) + ' ' + V + ' L ' + math.abs((p0 - (p0 * d0))/2) + ' ' + V + ' Z'" 
+        fill-opacity="0.5"
+      >
+      </path>
+      <text x="50%" y="50%" dominant-baseline ="middle">
+          {{d0 * 100}}%
+      </text>
+    </g>
+  </svg>

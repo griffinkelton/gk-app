@@ -1,0 +1,12 @@
+@import url("../brand.css");
+
+svg {
+  fill: var(--brand-color);
+  display: block;
+  margin: auto;
+}
+
+text {
+  fill: white;
+  text-anchor: middle;
+}

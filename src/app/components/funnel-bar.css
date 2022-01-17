@@ -1,13 +1,5 @@
 @import url("../brand.css");
 
-canvas {
-  border-style: solid;
-  border-color: var(--brand-color);
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 .funnel {
   width: 100%;
   display: flex;
@@ -34,6 +26,7 @@ canvas {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.33;
+  height: 57px;
 }
 
 .funnel-bar:hover {
@@ -44,50 +37,4 @@ canvas {
 
 #targeted {
   width: 630px;
-  height: 57px;
-}
-
-.descender {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transform: rotate(180deg) scaleX(-1);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.descender {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.descender-bar {
-  height: 36px;
-  color: #ffffff;
-  background-color: var(--brand-color-trans);
-  font-size: 24px;
-  line-height: 1.33;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.left-half {
-  margin-left: auto;
-  margin-right: 0;
-  transform-origin: top left;
-  -ms-transform: skew(-30deg, 0deg);
-  -webkit-transform: skew(-30deg, 0deg);
-  transform: skew(-30deg, 0deg);
-}
-
-.right-half {
-  margin-left: 0;
-  margin-right: auto;
-  transform-origin: top right;
-  -ms-transform: skew(30deg, 0deg);
-  -webkit-transform: skew(30deg, 0deg);
-  transform: skew(30deg, 0deg);
 }
