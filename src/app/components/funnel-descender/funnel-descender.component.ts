@@ -1,5 +1,5 @@
 import { Component, Input, AfterViewInit, ViewChild, ElementRef, OnInit, ViewChildren} from '@angular/core';
-import { sbFunnelBar } from './funnel-bar.component'
+import { sbFunnelBar } from '../funnel-bar/funnel-bar.component'
 
 /* SVG formula for funnel descender
 
@@ -21,7 +21,7 @@ For example:
 630 - 94.5 = 535.5
 0 + 94.5 = 94.5
 
-<path d=‘M0 0 H 630 L 535.5 36 L 94.5 36 Z><path>
+<path d=‘M0 0 H 630 L 535.5 36 L 94.5 36 Z'><path>
 
 */
 
@@ -32,10 +32,7 @@ For example:
   inputs: ['data-drop']
 })
 
-export class sbFunnelDescender implements OnInit, AfterViewInit{
-
-  @ViewChild('bar') svg: ElementRef;
-  @ViewChildren(sbFunnelBar) public child: sbFunnelBar;
+export class sbFunnelDescender implements OnInit{
 
 math = Math;
 
@@ -44,21 +41,17 @@ readonly Oy: number = 0;
 
 readonly V: number = 36; //height
 
-p0: number = 630; //width
+@Input()
+p0: number; //width
 
-public bW0: number
+bW0: number
 diff0: number;
 diff0x: number;
 bRx: number;
 bLx: number
 
 @Input()
-d0!: number;
-
-@Input()
-id?:string;
-
-w0:number;
+d0: number;
 
 details: string;
 
@@ -69,21 +62,5 @@ ngOnInit(): void {
   this.bRx = this.p0 - this.diff0x; 409.5
   this.bLx = this.Ox + this.diff0x; 220.5
   this.details = 'M '+ this.Ox + ' ' + this.Oy + ' H ' + this.p0 + ' L ' + this.bRx + ' ' + this.V + ' L ' + this.bLx + ' ' + this.V + ' Z';
-}
-
-ngAfterViewInit() {
-  this.id = this.svg.nativeElement.getAttribute('id'); // set ID value
-  this.w0=this.child.width; // set w0 value to width from funnel-bar.component
-  if (this.id === 'targeted'){
-    this.svg.nativeElement.setAttribute('width', this.p0); // if true, this would the first bar (always 630px wide)
-  }
-  else{
-    this.svg.nativeElement.setAttribute('width', this.w0);
-    console.log(this.w0);
-  }
-  if (this.id != 'targeted'){
-      this.details = 'M '+ this.Ox + ' ' + this.Oy + ' H ' + this.bW0 + ' L ' + this.bRx + ' ' + this.V + ' L ' + this.bLx + ' ' + this.V + ' Z';
-    }
-  
 }
 }

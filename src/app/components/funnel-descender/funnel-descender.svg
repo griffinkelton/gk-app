@@ -1,8 +1,8 @@
- <svg #bar [attr.height]='[V]' id='{{id}}'>
+ <svg #bar [attr.height]='[V]' [attr.width]='[p0]'>
     <g>
       <path [attr.d]='details' fill-opacity='0.5'></path>
       <text x="50%" y="50%" dominant-baseline ="middle">
-          {{d0 * 100}}% {{bW0}}
+          {{d0 * 100}}%
       </text>
     </g>
   </svg>

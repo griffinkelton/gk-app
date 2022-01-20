@@ -1,4 +1,4 @@
-@import url("../brand.css");
+@import url("../../brand.css");
 
 .funnel {
   width: 100%;
@@ -27,6 +27,7 @@
   font-weight: bold;
   line-height: 1.33;
   height: 57px;
+  margin: auto;
 }
 
 .funnel-bar:hover {

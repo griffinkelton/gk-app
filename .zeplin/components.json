@@ -1,52 +1,52 @@
 {
-  "plugins": [
-    {
-      "name": "@zeplin/cli-connect-angular-plugin"
-    },
-    {
-      "name": "@zeplin/cli-connect-storybook-plugin",
-      "config": {
-        "url": "http://localhost:6006/",
-        "startScript": "storybook"
-      }
-    }
-  ],
-  "projects": [
-    "61d5f289ed8d1e79ade68398"
-  ],
-  "components": [
-    {
-      "path": "src/app/components/button.component.ts",
-      "zeplinIds": [
-        "61d5f29d49b0f485fecf7dee",
-        "61d5f29ee849298ddc4ff7c5"
-      ]
-    },
-    {
-      "path": "src/app/components/nav.component.ts",
-      "zeplinIds": [
-        "61d5f29c34e437886e08e1a2"
-      ]
-    },
-    {
-      "path": "src/app/components/header.component.ts",
-      "zeplinIds": [
-        "61d5f29dcfb7ff78d4246daa"
-      ]
-    },
-    {
-      "path": "src/app/components/line.component.ts",
-      "zeplinIds": [
-        "61d880ff31915e75827b7262",
-        "61d880ffccb46f7c5fe59983"
-      ]
-    },
-    {
-      "path": "src/app/components/funnel-bar.component.ts",
-      "zeplinIds": [
-        "61df4092b382be69ee570ac0",
-        "61df409115532232ebf49ddd"
-      ]
-    }
-  ]
+    "plugins": [
+        {
+            "name": "@zeplin/cli-connect-angular-plugin"
+        },
+        {
+            "name": "@zeplin/cli-connect-storybook-plugin",
+            "config": {
+                "url": "http://localhost:6006/",
+                "startScript": "storybook"
+            }
+        }
+    ],
+    "projects": [
+        "61d5f289ed8d1e79ade68398"
+    ],
+    "components": [
+        {
+            "path": "src/app/components/button.component.ts",
+            "zeplinIds": [
+                "61d5f29d49b0f485fecf7dee",
+                "61d5f29ee849298ddc4ff7c5"
+            ]
+        },
+        {
+            "path": "src/app/components/nav.component.ts",
+            "zeplinIds": [
+                "61d5f29c34e437886e08e1a2"
+            ]
+        },
+        {
+            "path": "src/app/components/header.component.ts",
+            "zeplinIds": [
+                "61d5f29dcfb7ff78d4246daa"
+            ]
+        },
+        {
+            "path": "src/app/components/line.component.ts",
+            "zeplinIds": [
+                "61d880ff31915e75827b7262",
+                "61d880ffccb46f7c5fe59983"
+            ]
+        },
+        {
+            "path": "src/app/components/funnel-bar/funnel-bar.component.ts",
+            "zeplinIds": [
+                "61df4092b382be69ee570ac0",
+                "61df409115532232ebf49ddd"
+            ]
+        }
+    ]
 }
