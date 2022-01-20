@@ -1,5 +1,5 @@
-import { Component, Input, OnInit} from '@angular/core';
-import { NumberValueAccessor } from '@angular/forms';
+import { Component, Input, AfterViewInit, ViewChild, ElementRef, OnInit, ViewChildren} from '@angular/core';
+import { sbFunnelBar } from './funnel-bar.component'
 
 /* SVG formula for funnel descender
 
@@ -28,10 +28,14 @@ For example:
 @Component({
   selector: 'storybook-funnel-descender',
   templateUrl: './funnel-descender.svg',
-  styleUrls: ['./funnel-descender.css']
+  styleUrls: ['./funnel-descender.css'],
+  inputs: ['data-drop']
 })
 
-export class sbFunnelDescender{
+export class sbFunnelDescender implements OnInit, AfterViewInit{
+
+  @ViewChild('bar') svg: ElementRef;
+  @ViewChildren(sbFunnelBar) public child: sbFunnelBar;
 
 math = Math;
 
@@ -40,9 +44,46 @@ readonly Oy: number = 0;
 
 readonly V: number = 36; //height
 
-readonly p0: any = 630; //width
+p0: number = 630; //width
 
+public bW0: number
+diff0: number;
+diff0x: number;
+bRx: number;
+bLx: number
 
 @Input()
 d0!: number;
+
+@Input()
+id?:string;
+
+w0:number;
+
+details: string;
+
+ngOnInit(): void {
+  this.bW0 = this.p0*this.d0; 189
+  this.diff0 = this.p0-this.bW0; 441
+  this.diff0x = this.diff0/2; 220.5
+  this.bRx = this.p0 - this.diff0x; 409.5
+  this.bLx = this.Ox + this.diff0x; 220.5
+  this.details = 'M '+ this.Ox + ' ' + this.Oy + ' H ' + this.p0 + ' L ' + this.bRx + ' ' + this.V + ' L ' + this.bLx + ' ' + this.V + ' Z';
+}
+
+ngAfterViewInit() {
+  this.id = this.svg.nativeElement.getAttribute('id'); // set ID value
+  this.w0=this.child.width; // set w0 value to width from funnel-bar.component
+  if (this.id === 'targeted'){
+    this.svg.nativeElement.setAttribute('width', this.p0); // if true, this would the first bar (always 630px wide)
+  }
+  else{
+    this.svg.nativeElement.setAttribute('width', this.w0);
+    console.log(this.w0);
+  }
+  if (this.id != 'targeted'){
+      this.details = 'M '+ this.Ox + ' ' + this.Oy + ' H ' + this.bW0 + ' L ' + this.bRx + ' ' + this.V + ' L ' + this.bLx + ' ' + this.V + ' Z';
+    }
+  
+}
 }
