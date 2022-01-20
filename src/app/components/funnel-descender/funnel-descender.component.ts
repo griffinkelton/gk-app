@@ -1,5 +1,4 @@
-import { Component, Input, AfterViewInit, ViewChild, ElementRef, OnInit, ViewChildren} from '@angular/core';
-import { sbFunnelBar } from '../funnel-bar/funnel-bar.component'
+import { Component, Input, OnInit} from '@angular/core';
 
 /* SVG formula for funnel descender
 

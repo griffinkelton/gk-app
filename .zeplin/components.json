@@ -16,26 +16,26 @@
     ],
     "components": [
         {
-            "path": "src/app/components/button.component.ts",
+            "path": "src/app/components/button/button.component.ts",
             "zeplinIds": [
                 "61d5f29d49b0f485fecf7dee",
                 "61d5f29ee849298ddc4ff7c5"
             ]
         },
         {
-            "path": "src/app/components/nav.component.ts",
+            "path": "src/app/components/nav/nav.component.ts",
             "zeplinIds": [
                 "61d5f29c34e437886e08e1a2"
             ]
         },
         {
-            "path": "src/app/components/header.component.ts",
+            "path": "src/app/components/header/header.component.ts",
             "zeplinIds": [
                 "61d5f29dcfb7ff78d4246daa"
             ]
         },
         {
-            "path": "src/app/components/line.component.ts",
+            "path": "src/app/components/line/line.component.ts",
             "zeplinIds": [
                 "61d880ff31915e75827b7262",
                 "61d880ffccb46f7c5fe59983"
